@@ -4,10 +4,7 @@
     function randomRarity() {
     var i = getRandomNumberBetween(1,1860);
 
-    if ((i >= 524) && (i <= 1018)) {
-    document.getElementById("SP").innerHTML = `<b>Short Print</b> <em>(roll was ${+i} out of 1860)</em>`;
-    }
-    else if ((i >= 1019) && (i <= 1273)) {
+    if ((i >= 850) && (i <= 1273)) {
     document.getElementById("R").innerHTML = `<b>Rare</b> <em>(roll was ${+i} out of 1860)</em>`;
     }
     else if ((i >= 1274) && (i <= 1645)) {
@@ -23,6 +20,7 @@
     document.getElementById("C").innerHTML = `<b>Common</b> <em>(roll was ${+i} out of 1860)</em>`;
     }
     }
+    
     function randomRarityGuaranteed() {
     var i = getRandomNumberBetween(1,1860);
 
